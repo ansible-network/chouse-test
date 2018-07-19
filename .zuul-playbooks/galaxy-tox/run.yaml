@@ -3,6 +3,6 @@
   tasks:
     - shell: type tox || pip install --user tox
 
-    - command:
-        args: tox
+    - command: tox
+        args:
           chdir: "{{ zuul_work_dir }}"
