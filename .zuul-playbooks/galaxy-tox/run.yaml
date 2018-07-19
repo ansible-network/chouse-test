@@ -1,0 +1,8 @@
+- hosts: all
+
+  tasks:
+    - shell: type tox || pip install --user tox
+
+    - command:
+        args: tox
+          chdir: "{{ zuul_work_dir }}"
