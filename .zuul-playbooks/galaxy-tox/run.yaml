@@ -6,4 +6,4 @@
     - command: tox
       args:
         chdir: "{{ zuul.project.src_dir }}"
-      become: yes
+      become: true
