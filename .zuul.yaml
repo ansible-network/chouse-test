@@ -8,6 +8,7 @@
       nodes:
         - name: testvm
           label: dib-fedora-27
+    timeout: 3600
 
 - project:
     check:
