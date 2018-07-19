@@ -2,6 +2,7 @@
 
 - job:
     name: galaxy-tox
+    pre-run: .zuul-playbooks/galaxy-tox/pre.yaml
     run: .zuul-playbooks/galaxy-tox/run.yaml
     nodeset:
       nodes:
