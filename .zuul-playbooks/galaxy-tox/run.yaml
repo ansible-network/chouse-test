@@ -9,6 +9,9 @@
       become: yes
     - shell: dnf -y install docker-ce
       become: yes
+    - shell: systemctl start docker
+      become: yes
+    - shell: docker run hello-world
 
     - shell: type tox || pip install --user tox
 
