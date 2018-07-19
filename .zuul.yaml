@@ -1,16 +1,20 @@
 ---
 
 - job:
-    name: tox-all
+    name: galaxy-tox
     parent: tox
     vars:
       tox_envlist: ALL
+    nodeset:
+      nodes:
+        - name: testvm
+          label: dib-fedora-27
 
 - project:
     check:
       jobs:
-        - tox-all
+        - galaxy-tox
 
     gate:
       jobs:
-        - tox-all
+        - galaxy-tox
