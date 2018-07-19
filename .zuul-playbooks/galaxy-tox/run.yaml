@@ -11,8 +11,10 @@
       become: yes
     - shell: systemctl start docker
       become: yes
-    - shell: docker run hello-world
+    - shell: pwd
+    - shell: usermod -aG docker zuul-worker
       become: yes
+    - shell: docker run hello-world
 
     - shell: type tox || pip install --user tox
 
