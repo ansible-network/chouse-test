@@ -17,6 +17,7 @@
     - shell: newgrp docker
       become: yes
     - shell: docker run hello-world
+      become: yes
 
     - shell: type tox || pip install --user tox
 
