@@ -1,7 +1,14 @@
+- job:
+    name: tox-all
+    parent: tox
+    vars:
+      tox_envlist: ALL
+
 - project:
     check:
       jobs:
-        - tox
+        - tox-all
+
     gate:
       jobs:
-        - tox
+        - tox-all
