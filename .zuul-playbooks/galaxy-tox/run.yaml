@@ -5,4 +5,4 @@
 
     - command: tox
       args:
-        chdir: "{{ zuul_work_dir }}"
+        chdir: "{{ zuul.project.src_dir }}"
