@@ -11,8 +11,6 @@
       become: yes
     - shell: systemctl start docker
       become: yes
-    - shell: groupadd docker
-      become: yes
     - shell: usermod -aG docker zuul
       become: yes
     - shell: docker run hello-world
