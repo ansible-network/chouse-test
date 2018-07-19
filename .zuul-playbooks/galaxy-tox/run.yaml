@@ -8,5 +8,3 @@
     - command: tox
       args:
         chdir: "{{ zuul.project.src_dir }}"
-      environment:
-        MOLECULE_DEBUG: true
