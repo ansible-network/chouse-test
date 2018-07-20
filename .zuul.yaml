@@ -1,0 +1,10 @@
+---
+
+- project:
+    check:
+      jobs:
+        - galaxy-tox
+
+    gate:
+      jobs:
+        - galaxy-tox
